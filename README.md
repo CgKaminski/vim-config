@@ -28,3 +28,5 @@ Along with some other changes ;)
 
 --------------------------------------------------------------------------------
 
+NOTE: this repo is not meant to be cloned, I have designed it to be used as a
+template for the <.vimrc> file.
