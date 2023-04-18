@@ -1,0 +1,34 @@
+call plug#begin('~/.vim/plugged')
+
+" SYNTASTIC HIGHLIGHTING
+Plug 'scrooloose/syntastic'
+
+" FUGITIVE GITHUB WRAPPER
+Plug 'tpope/vim-fugitive'
+
+" GITHUB COPILOT
+Plug 'github/copilot.vim'
+
+" NERDTREE FILE BROWSER
+Plug 'preservim/nerdtree'
+
+" RETRO GROOVE COLOR SCHEME
+Plug 'morhetz/gruvbox'
+
+call plug#end()
+
+" COLOR SCHEME & SYNTAX
+set termguicolors
+set background=dark
+syntax enable
+color gruvbox
+
+" SYNTASTIC HIGHLIGHTING CONFIG
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
